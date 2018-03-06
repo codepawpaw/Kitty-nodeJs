@@ -6,13 +6,13 @@ var options = {
 
 var DeviceInterface = {
     turnOn : function (param) {
-        pythonShell.run(param + 'on.py', options, function(err, results){
+        pythonShell.run(param + '_on.py', options, function(err, results){
             return "ok";
         });
     },
 
     turnOff : function (param) {
-        pythonShell.run(param + 'off.py', options, function(err, results){
+        pythonShell.run(param + '_off.py', options, function(err, results){
             return "ok";
         });
     }
