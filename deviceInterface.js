@@ -1,7 +1,7 @@
 var pythonShell = require('python-shell');
 var options = {
     // scriptPath: '/home/pi/Workspace/LampSwitch/'
-    scriptPath: '../python/'
+    scriptPath: './python/'
 }
 
 var DeviceInterface = {
