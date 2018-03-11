@@ -1,7 +1,12 @@
+var Devices = require("./devices.js");
+var devices = require("./devices.json");
+
 var DeviceFilter = {
     filter : function (param) {
         if(param.includes("lamp")) {
-            return "lamp";
+            var result = devices["lamp"];
+            var device = Devices.init("lamp", result.pin);
+            return device;
         }
     }
 }
